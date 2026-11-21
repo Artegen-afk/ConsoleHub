@@ -6,7 +6,7 @@ using Android.Widget;
 using ConsoleHub;
 using ConsoleHub.Gba;
 
-namespace ConsoleHub.Android;
+namespace ConsoleHubMobile;
 
 [Activity(Label = "ConsoleHub", MainLauncher = true, Exported = true, ScreenOrientation = global::Android.Content.PM.ScreenOrientation.Landscape)]
 public sealed class MainActivity : Activity
@@ -47,7 +47,7 @@ public sealed class MainActivity : Activity
 
     private Button MakeButton(string text)
     {
-        var button = new Button(this) { Text = text, TextSize = 12, AllCaps = false };
+        var button = new Button(this) { Text = text, TextSize = 12,  };
         return button;
     }
 
