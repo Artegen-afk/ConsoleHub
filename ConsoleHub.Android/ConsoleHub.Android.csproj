@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-android</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ConsoleHub.Android</RootNamespace>
+    <ApplicationId>com.consolehub.android</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
+    <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+    <SupportedOSPlatformVersion>23</SupportedOSPlatformVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AndroidPackageFormat>apk</AndroidPackageFormat>
+    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ConsoleHub.Contracts\ConsoleHub.Contracts.csproj" />
+    <Compile Include="..\ConsoleHub\Gba\Arm7Tdmi.cs" Link="Gba\Arm7Tdmi.cs" />
+    <Compile Include="..\ConsoleHub\Gba\GbaMemory.cs" Link="Gba\GbaMemory.cs" />
+    <Compile Include="..\ConsoleHub\Gba\GbaCore.cs" Link="Gba\GbaCore.cs" />
+  </ItemGroup>
+</Project>

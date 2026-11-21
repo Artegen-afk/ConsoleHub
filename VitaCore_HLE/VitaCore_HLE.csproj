@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>VitaCore_HLE</AssemblyName>
+    <OutputPath>..\ConsoleHub\cores\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ConsoleHub.Contracts\ConsoleHub.Contracts.csproj" />
+    <Compile Include="..\CoreScaffoldBase.cs" Link="CoreScaffoldBase.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <RootNamespace>ConsoleHub</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Raylib-cs" Version="8.1.0" />
+    <ProjectReference Include="..\ConsoleHub.Contracts\ConsoleHub.Contracts.csproj" />
+    <ProjectReference Include="..\SwitchCore_HLE\SwitchCore_HLE.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="..\VitaCore_HLE\VitaCore_HLE.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="..\CtrCore_HLE\CtrCore_HLE.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="..\DolphinCustomCore\DolphinCustomCore.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="..\Ps2CustomCore\Ps2CustomCore.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="..\Ps1CustomCore\Ps1CustomCore.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="..\N64CustomCore\N64CustomCore.csproj" ReferenceOutputAssembly="false" />
+  </ItemGroup>
+</Project>
