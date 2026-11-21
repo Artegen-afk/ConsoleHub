@@ -1,5 +1,5 @@
 using Android.App;
-using Android.Content;
+using global::Android.Content;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
@@ -8,7 +8,7 @@ using ConsoleHub.Gba;
 
 namespace ConsoleHub.Android;
 
-[Activity(Label = "ConsoleHub", MainLauncher = true, Exported = true, ScreenOrientation = Android.Content.PM.ScreenOrientation.Landscape)]
+[Activity(Label = "ConsoleHub", MainLauncher = true, Exported = true, ScreenOrientation = global::Android.Content.PM.ScreenOrientation.Landscape)]
 public sealed class MainActivity : Activity
 {
     private const int PickRomRequest = 101;
@@ -106,7 +106,7 @@ public sealed class MainActivity : Activity
         }
     }
 
-    private string? GetDisplayName(Android.Net.Uri uri)
+    private string? GetDisplayName(global::Android.Net.Uri uri)
     {
         using var cursor = ContentResolver?.Query(uri, null, null, null, null);
         if (cursor is null || !cursor.MoveToFirst()) return null;
