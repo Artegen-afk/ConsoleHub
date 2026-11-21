@@ -1,3 +1,4 @@
+using ConsoleHub.Android;
 using Android.App;
 using global::Android.Content;
 using Android.OS;
